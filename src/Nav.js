@@ -56,7 +56,7 @@ const Nav = ()=>{
 				<div className="downloads" onClick={handleDownloads}>Downloads</div>
 			</div>
 			<form>
-				<input type="text" onChange={(e)=>setNewImage({location:e.target.value})}/>
+				<input placeholder="submit image url" type="text" onChange={(e)=>setNewImage({location:e.target.value})}/>
 				<button onClick={handleOnclick}>Add</button>
 			</form>
 		</nav>
