@@ -1,0 +1,234 @@
+@import "_global";
+@import "_firstPage";
+@import "_secondPage";
+
+
+
+h2{
+	font-size:4vw;
+	margin:3vw;
+	text-align:center;
+	margin-bottom:10vw;
+}
+
+
+nav{
+	background:$darkGray;
+	
+	form{
+		position:absolute;
+		left:75%;
+		color:black;
+		visibility:hidden;
+		
+		input, button{
+			color:black;
+			padding:0.5vw;
+			font-size:1.3vw;
+		}
+		
+	
+	}
+	
+	.whole{
+		width:70%;
+		display:flex;
+		color:white;
+		justify-content:space-between;
+		padding:0 10vw;
+		margin:auto;
+		height:4vw;
+		align-items:center;
+	}
+	
+	.title{
+		overflow:hidden;
+		height:100%;
+		position:relative;
+		top:1vw;
+		
+		.aplikacija{
+			
+			font-size:1.7vw;
+		}
+		.button{
+			background:blue;
+			position:relative;
+			text-align:center;
+			font-size:5vw;
+			line-height:8vw;
+			bottom:1.6vw;
+			cursor:pointer;
+			display:none;
+		}
+	}
+	
+	a{
+		text-decoration:none;
+		color:white;
+		font-size:1.6vw;
+	}
+	
+	a:hover{
+		color:skyblue;
+	}
+	
+	
+	.logo{
+		width:2vw;
+	}
+	
+	.downloads:hover{
+		color:skyblue;
+		cursor:pointer;
+	}
+}
+
+
+@media only screen and (max-width:1000px) {
+	form{
+		display:none;
+	}
+	
+	h2{
+		padding-top:80px;
+		text-align:center;
+		font-size:40px;
+		margin-bottom:80px;
+	}
+	
+	
+	nav{
+		width:350px;
+		border-radius:5px;
+		margin-left:5px;
+		position:absolute;
+		z-index:2;
+		top:5px;
+		
+		
+		.whole{
+			width:100%;
+			flex-direction:column;
+			position:relative;
+			padding:0;
+			height:inherit;
+		}
+		
+		.logo{
+			display:none;
+		}
+		
+		.title{
+			overflow:hidden;
+			height:100%;
+			position:relative;
+			width:100%;
+			text-align:center;
+			top:10px;
+			margin-bottom:30px;
+			border-bottom:2px solid #333;
+			padding-bottom:15px;
+			height:20px;
+			
+			.aplikacija{
+				font-size:17px;
+			}
+			.button{
+				background:inherit;
+				font-size:50px;
+				line-height:90px;
+				bottom:22px;
+				display:block;
+				
+				&:hover{
+					color:blue;
+				}
+			}
+		}
+		
+		a{
+			font-size:16px;
+			margin-bottom:10px;
+			display:none;
+		}
+		
+		.downloads{
+			display:none;
+		}
+	}
+}
+
+
+
+@media only screen and (max-width:700px) {
+	
+	h2{
+		padding-top:70px;
+		text-align:center;
+		font-size:25px;
+	}
+	
+	
+	nav{
+		width:300px;
+		border-radius:5px;
+		position:absolute;
+		z-index:2;
+		transform:scale(0.8);
+		margin:auto;
+		left:-20px;
+		
+		
+		.whole{
+			width:100%;
+			flex-direction:column;
+			position:relative;
+			padding:0;
+			height:inherit;
+		}
+		
+		
+		.title{
+			
+			text-align:center;
+			top:10px;
+			margin-bottom:30px;
+			border-bottom:2px solid #333;
+			padding-bottom:15px;
+			height:20px;
+			
+			
+			.button{
+				
+				&:hover{
+					color:blue;
+				}
+			}
+		}
+		
+		a{
+			font-size:16px;
+			margin-bottom:10px;
+		}
+		
+		.downloads{
+			display:none;
+		}
+	}
+}
+
+
+
+
+
+@keyframes flip{
+	0%{transform:rotateY(0deg)}
+	1%{transform:rotateY(90deg)}
+	100%{transform:rotateY(0deg)}
+}
+
+@keyframes grow{
+	0%{transform:scale(1)}
+	100%{transform:scale(2.5);border-radius:2vw;}
+}

@@ -1,0 +1,20 @@
+$darkGray: #14141f;
+
+@mixin arrows(){
+	position:relative;
+	width:5vw;
+	height:5vw;
+	top:30vw;
+}
+
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+	color:white;
+}
+
+body{
+	background-color:#333;
+}
+
